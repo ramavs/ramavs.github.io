@@ -87,3 +87,15 @@ function startTimer() {
 window.onload = function() {
     startTimer();
 };
+var textArray = ["|", "|", "|", "\/"];
+var counter = 0;
+
+function animatePipes() {
+  if (counter < textArray.length) {
+    document.getElementById("pipeAnimation").innerHTML += textArray[counter] + "<br>";
+    counter++;
+    setTimeout(animatePipes, 1000);  // adjust the delay time here
+  }
+}
+
+window.onload = animatePipes; // Starts the function when page loads
