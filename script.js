@@ -67,7 +67,7 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
-var counter = 5; // 5 second timer
+var counter = 10; // 5 second timer
 var intervalId = null;
 
 function startTimer() {
